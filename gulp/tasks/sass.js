@@ -12,9 +12,6 @@ gulp.task('sass', function () {
     .pipe(sass({
       includePaths: require('node-neat').includePaths
     }))
-    .pipe(sass({
-      includePaths: require('node-bourbon').includePaths
-    }))
 
     .pipe(sourcemaps.init())
 
